@@ -73,6 +73,15 @@ class Program
 
     static void Main()
     {
+        // ⭐ NEW: Program introduction and header
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("=========================================");
+        Console.WriteLine("Target Number Index Finder Program");
+        Console.WriteLine("=========================================");
+        Console.ResetColor();
+        Console.WriteLine("This program lets you enter a list of numbers,");
+        Console.WriteLine("then asks for a target number and shows all indexes where it appears.\n");
+
         List<int> numbers = new List<int>();
         Console.WriteLine("Enter numbers one by one (type 'done' to finish):");
 
