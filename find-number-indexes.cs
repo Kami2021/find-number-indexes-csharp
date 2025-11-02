@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 class Program
 {
+    // This method finds all indexes where the target number appears
     static List<int> FindTargetIndexes(int[] nums, int target)
     {
         List<int> indexes = new List<int>();
@@ -18,6 +19,15 @@ class Program
 
     static void Main()
     {
+        // ⭐ NEW: Program introduction and header
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("=========================================");
+        Console.WriteLine("Target Number Index Finder Program");
+        Console.WriteLine("=========================================");
+        Console.ResetColor();
+        Console.WriteLine("This program lets you enter a list of numbers,");
+        Console.WriteLine("then asks for a target number and shows all indexes where it appears.\n");
+
         List<int> numbers = new List<int>();
         Console.WriteLine("Enter numbers one by one (type 'done' to finish):");
 
